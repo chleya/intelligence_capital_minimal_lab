@@ -1,0 +1,6 @@
+condition,result,detail
+D_m1: weight collapse,FAIL,Trust explosion = 0.7860
+D_m2: row/col sum error,PASS,Sinkhorn converges
+D_m3: weight turnover,PASS,Mean turnover = 0.0011
+D_m4: unconstrained vs constrained,PASS,Constrained is more stable
+D_m5: beats BestSingleCapital,FAIL,Cyber=0.6233 vs BS=0.6283

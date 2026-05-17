@@ -1,0 +1,8 @@
+gate,passed
+feature_ban_gate,True
+capital_report_interface_gate,True
+baseline_gate,True
+main_metric_gate,True
+negative_transfer_gate,True
+external_benchmark_gate,True
+taxonomy_stress_gate,True

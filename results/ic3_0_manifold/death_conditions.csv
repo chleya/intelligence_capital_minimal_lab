@@ -1,0 +1,6 @@
+condition,triggered,detail
+D1_weight_collapse,False,collapse_ratio simplex=0.000 birkhoff=0.000
+D2_transition_sum_error,False,row_err=0.000001 col_err=0.000001 (tol=0.05)
+D3_weight_oscillation,False,turnover simplex=0.0002 birkhoff=0.0000
+D4_unconstrained_vs_constrained,False,unconstr_perf=0.4260 simplex=0.3778 birkhoff=0.3994 | turnover unconstrained=0.0021 simplex=0.0002
+D5_constrained_lt_best_single,False,constrained_best=0.3994 BestSingle=0.3752

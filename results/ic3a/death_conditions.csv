@@ -1,0 +1,7 @@
+condition,triggered,detail
+D1_allocator_lte_best_single,False,
+D2_only_beats_uniform,False,
+D3_feature_engineering_regression,False,
+D4_goal_inference_failure,False,
+D5_negative_transfer_failed,False,
+D6_external_validation_failed,False,

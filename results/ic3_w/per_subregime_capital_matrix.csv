@@ -1,0 +1,5 @@
+subregime,expected_best,actual_best,margin,match,PolicyClone,PrototypeOutcome,AEP,GoalInference,SafeFallback
+W1_PolicyClone,PolicyClone,PolicyClone,1.0,True,1.0,0.0,0.0,0.0,0.0
+W2_AEP,AEP,AEP,1.0,True,0.0,0.0,1.0,0.0,0.0
+W3_PrototypeOutcome,PrototypeOutcome,PrototypeOutcome,1.0,True,0.0,1.0,0.0,0.0,0.0
+W4_GoalInference,GoalInference,GoalInference,0.9900000002235174,True,0.0,0.0,0.0,1.0,0.009999999776482582

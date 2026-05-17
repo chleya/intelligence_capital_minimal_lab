@@ -1,0 +1,38 @@
+field,status,source,dimension_count
+bad_debt_score,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+calibration_error,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+capital_age,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+capital_local_ood_score,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+confidence,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+depreciation_score,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+expected_probe_value,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+goal_shift_score,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+impairment_flag,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+inference_cost,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+nearest_support_distance,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+predicted_utility,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+probe_cost,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+realization_rate,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+realized_utility,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+recent_prediction_error,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+recent_regret,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+recent_transfer_regret,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+recommended_action,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+storage_cost,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+transfer_success_rate,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+uncertainty_reduction_if_probe,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+update_cost,ALLOWED,CapitalReport.to_vector(),5x per vector = 5 fields in input
+action_effect_rule_name,FORBIDDEN,N/A,0 — absent from allocator input
+delay_strength,FORBIDDEN,N/A,0 — absent from allocator input
+env_id,FORBIDDEN,N/A,0 — absent from allocator input
+env_name,FORBIDDEN,N/A,0 — absent from allocator input
+friction,FORBIDDEN,N/A,0 — absent from allocator input
+hand_written_regime_label,FORBIDDEN,N/A,0 — absent from allocator input
+manually_computed_global_coverage,FORBIDDEN,N/A,0 — absent from allocator input
+mode_type,FORBIDDEN,N/A,0 — absent from allocator input
+state_dim,FORBIDDEN,N/A,0 — absent from allocator input
+task_id,FORBIDDEN,N/A,0 — absent from allocator input
+task_type,FORBIDDEN,N/A,0 — absent from allocator input
+utility_type,FORBIDDEN,N/A,0 — absent from allocator input
+TOTAL_INPUT_DIMENSION,115 features,23 fields x 5 capitals = 115,115
+FORBIDDEN_FOUND,0,Allocator input audit,0

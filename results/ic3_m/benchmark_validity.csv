@@ -1,0 +1,9 @@
+capital,score,benchmark_valid
+PolicyClone,0.39171046018600464,False
+PrototypeOutcome,0.5814360976219177,False
+AEP,0.6917688250541687,False
+GoalInference,0.406888484954834,False
+SafeFallback,0.15119673311710358,False
+OracleHindsight,1.0,False
+BestSingle,0.6917688250541687,False
+OH_gain,0.3082311749458313,False

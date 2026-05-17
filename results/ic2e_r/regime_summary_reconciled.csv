@@ -1,0 +1,28 @@
+regime,absolute_winner,cost_efficiency_winner,far_ood_winner,notes
+state_dim_2,AEPCompressor,StandardizedKNNOutcomeTable,PrototypeOutcomeTable,AEP 0.950 > RMOT 0.881 (Δ=+0.069); CE: RMOT=3.32e-05 vs AEP=1.29e-05
+state_dim_4,AEPCompressor,StandardizedKNNOutcomeTable,PrototypeOutcomeTable,AEP 0.915 > RMOT 0.834 (Δ=+0.082); CE: RMOT=3.13e-05 vs AEP=1.15e-05
+state_dim_8,AEPCompressor,StandardizedKNNOutcomeTable,PrototypeOutcomeTable,AEP 0.918 > RMOT 0.847 (Δ=+0.071); CE: RMOT=3.21e-05 vs AEP=9.96e-06
+state_dim_16,AEPCompressor,StandardizedKNNOutcomeTable,AEPCompressor,AEP 0.837 > RMOT 0.750 (Δ=+0.087); CE: RMOT=2.88e-05 vs AEP=7.17e-06
+state_dim_32,AEPCompressor,StandardizedKNNOutcomeTable,ResidualCompressor,Close: AEP 0.841 ≈ RMOT 0.826; CE: RMOT=3.19e-05 vs AEP=5.07e-06
+coverage_dense,AEPCompressor,RawMemoryOutcomeTableFull,N/A,AEP 0.938 > RMOT 0.879 (Δ=+0.059); CE: RMOT=2.91e-05 vs AEP=1.21e-05
+coverage_extremely_sparse,AEPCompressor,RawMemoryOutcomeTableFull,N/A,Close: AEP 0.918 ≈ RMOT 0.896; CE: RMOT=9.65e-05 vs AEP=1.63e-05
+coverage_medium,AEPCompressor,RawMemoryOutcomeTableFull,N/A,AEP 0.933 > RMOT 0.874 (Δ=+0.058); CE: RMOT=5.54e-05 vs AEP=1.48e-05
+coverage_sparse,ResidualCompressor,RawMemoryOutcomeTableFull,N/A,Close: AEP 0.913 ≈ RMOT 0.900; CE: RMOT=8.39e-05 vs AEP=1.58e-05
+action_effect_action_velocity_interaction,ResidualCompressor,RawMemoryOutcomeTableFull,N/A,Close: AEP 0.886 ≈ RMOT 0.870; CE: RMOT=4.49e-05 vs AEP=1.33e-05
+action_effect_compositional_action_factors,AEPCompressor,RawMemoryOutcomeTableFull,N/A,AEP 0.885 > RMOT 0.819 (Δ=+0.066); CE: RMOT=4.23e-05 vs AEP=1.33e-05
+action_effect_delayed_action_effect,AEPCompressor,RawMemoryOutcomeTableFull,N/A,Close: AEP 0.856 ≈ RMOT 0.828; CE: RMOT=4.28e-05 vs AEP=1.29e-05
+action_effect_mode_conditioned_gain,AEPCompressor,RawMemoryOutcomeTableFull,N/A,AEP 0.915 > RMOT 0.805 (Δ=+0.110); CE: RMOT=4.16e-05 vs AEP=1.38e-05
+action_effect_piecewise_action_map,ResidualCompressor,RawMemoryOutcomeTableFull,N/A,AEP 0.885 > RMOT 0.789 (Δ=+0.096); CE: RMOT=4.07e-05 vs AEP=1.33e-05
+action_effect_simple_sign_flip,ResidualCompressor,RawMemoryOutcomeTableFull,N/A,AEP 0.980 > RMOT 0.841 (Δ=+0.139); CE: RMOT=4.34e-05 vs AEP=1.47e-05
+action_effect_state_dep_nonlinear_gain,AEPCompressor,RawMemoryOutcomeTableFull,N/A,AEP 0.930 > RMOT 0.872 (Δ=+0.058); CE: RMOT=4.50e-05 vs AEP=1.40e-05
+utility_adversarial,AEPCompressor,RawMemoryOutcomeTableFull,N/A,Close: AEP 0.990 ≈ RMOT 0.990; CE: RMOT=6.28e-05 vs AEP=1.57e-05
+utility_compositional_multiobj,AEPCompressor,RawMemoryOutcomeTableFull,N/A,Close: AEP 1.000 ≈ RMOT 1.000; CE: RMOT=6.34e-05 vs AEP=1.59e-05
+utility_energy_aware,AEPCompressor,RawMemoryOutcomeTableFull,N/A,Close: AEP 1.000 ≈ RMOT 1.000; CE: RMOT=6.34e-05 vs AEP=1.59e-05
+utility_nonlinear_interaction,MultiGoalPolicyClone,MultiGoalPolicyClone,N/A,AEP 0.595 > RMOT 0.155 (Δ=+0.440); CE: RMOT=9.83e-06 vs AEP=9.45e-06
+utility_piecewise_regional,AEPCompressor,RawMemoryOutcomeTableFull,N/A,AEP 0.795 > RMOT 0.600 (Δ=+0.195); CE: RMOT=3.81e-05 vs AEP=1.26e-05
+utility_risk_threshold,MultiGoalPolicyClone,MultiGoalPolicyClone,N/A,AEP 0.595 > RMOT 0.155 (Δ=+0.440); CE: RMOT=9.83e-06 vs AEP=9.45e-06
+utility_simple_linear,ResidualCompressor,RawMemoryOutcomeTableFull,N/A,Close: AEP 0.995 ≈ RMOT 0.995; CE: RMOT=6.31e-05 vs AEP=1.58e-05
+utility_target,ResidualCompressor,RawMemoryOutcomeTableFull,N/A,Close: AEP 0.995 ≈ RMOT 0.995; CE: RMOT=6.31e-05 vs AEP=1.58e-05
+far_ood_ID,AEPCompressor,N/A,AEPCompressor,AEP 0.960 vs RMOT 0.898 (Δ=+0.062)
+far_ood_far_OOD,PrototypeOutcomeTable,N/A,PrototypeOutcomeTable,AEP 0.815 vs RMOT 0.899 (Δ=-0.084)
+far_ood_near_OOD,ResidualCompressor,N/A,ResidualCompressor,AEP 0.909 vs RMOT 0.901 (Δ=+0.007)

@@ -1,0 +1,14 @@
+check,value_left,value_right,passed
+OracleHindsight >= BestSingleCapital,0.7566666603088379,0.5950000286102295,True
+OracleHindsight >= MetaMLPAllocator,0.7566666603088379,0.5016666650772095,True
+OracleHindsight >= FeedbackControlledAllocator,0.7566666603088379,0.5083333253860474,True
+OracleHindsight >= SimplexWeightAllocator,0.7566666603088379,0.3016666769981384,True
+OracleHindsight >= BirkhoffTransitionAllocator,0.7566666603088379,0.3016666769981384,True
+cumulative_regret[BestSingleCapital] >= 0,97.0,0.0,True
+cumulative_regret[UniformPortfolio] >= 0,227.0,0.0,True
+cumulative_regret[RandomAllocator] >= 0,234.0,0.0,True
+cumulative_regret[MetaMLPAllocator] >= 0,153.0,0.0,True
+cumulative_regret[FeedbackControlledAllocator] >= 0,149.0,0.0,True
+cumulative_regret[SimplexWeightAllocator] >= 0,273.0,0.0,True
+cumulative_regret[BirkhoffTransitionAllocator] >= 0,273.0,0.0,True
+OracleHindsight is absolute upper bound,0.7566666603088379,0.5950000286102295,True

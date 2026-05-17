@@ -1,0 +1,6 @@
+capital,is_best_single
+PolicyClone,False
+PrototypeOutcome,False
+AEP,True
+GoalInference,False
+SafeFallback,False

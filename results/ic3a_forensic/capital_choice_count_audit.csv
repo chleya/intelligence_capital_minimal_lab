@@ -1,0 +1,5 @@
+task_id,n_episodes,n_steps_total,choice_count_goalinfer,choice_rate_goalinfer,choice_count_paramcomp,choice_rate_paramcomp,choice_count_policy,choice_rate_policy,choice_count_protomem,choice_rate_protomem,denominator_used
+Task_A,1,250,49.0,0.196,80.0,0.32,36.0,0.144,85.0,0.34,250
+Task_B,1,250,22.0,0.088,126.0,0.504,28.0,0.112,74.0,0.296,250
+Task_C,1,250,43.0,0.172,95.0,0.38,44.0,0.176,68.0,0.272,250
+Task_D,1,250,87.0,0.348,94.0,0.376,32.0,0.128,37.0,0.148,250

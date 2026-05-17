@@ -1,0 +1,4 @@
+mechanism,window_size,threshold_steps,status,safe_action,rate
+CapitalImpairmentDetector,15.0,8.0,ACTIVE,,
+FallbackController,,,INCLUDED,1.0,
+DepreciationSchedule,,,ACTIVE,,0.002

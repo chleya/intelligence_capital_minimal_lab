@@ -1,0 +1,4 @@
+allocator,D_m1_weight_collapse,D_m1_detail,D_m2_row_col_error,D_m3_weight_turnover,D_m3_detail,D_m4_oscillation_energy,D_m5_beats_best_single,D_m5_detail
+SimplexWeightAllocator,PASS,max_weight=0.8500,PASS,PASS,turnover=0.0005,PASS,FAIL,SimplexWeightAllocator=0.3017 vs BS=0.5950
+BirkhoffTransitionAllocator,PASS,max_weight=0.2000,PASS,PASS,turnover=0.0000,PASS,FAIL,BirkhoffTransitionAllocator=0.3017 vs BS=0.5950
+FeedbackControlledAllocator,FAIL,max_weight=1.0000,PASS,PASS,turnover=0.0069,PASS,FAIL,FeedbackControlledAllocator=0.5083 vs BS=0.5950

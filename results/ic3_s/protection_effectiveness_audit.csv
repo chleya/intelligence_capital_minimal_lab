@@ -1,0 +1,6 @@
+config,score,cumulative_regret,delta_vs_BestSingle,fallback_trigger_count,fallback_rate,weight_mean_after_failure,avg_per_step_regret
+Cyber_no_protection,0.29333333333333333,280.0,-0.31500001589457194,592,0.9866666666666667,0.0,0.4666666666666667
+Cyber_impairment_only,0.505,153.0,-0.10333334922790527,0,0.0,0.0,0.255
+Cyber_impairment_fallback,0.505,153.0,-0.10333334922790527,0,0.0,0.0,0.255
+Cyber_imp_fallback_depr,0.505,153.0,-0.10333334922790527,0,0.0,0.0,0.255
+Cyber_full,0.505,153.0,-0.10333334922790527,0,0.0,0.0,0.255

@@ -1,0 +1,5 @@
+task,best_capital,expected_best,taxonomy_match,capital_dominance_index,task_specialization_index,best_capital_margin,entropy_best_capital,second_best,n_capitals_better_than_bs
+Task_A,AEP,PolicyClone,False,1.7546583823984725,0.7861838806660878,0.18666666746139526,1.0,0.5666666626930237,0
+Task_B,AEP,AEP,True,1.7430025853400877,0.6870328295871936,0.04000002145767212,0.0,0.8733333349227905,0
+Task_C,AEP,PrototypeOutcome,False,1.7331288281514512,0.7763176868755031,0.18666666746139526,1.0,0.5666666626930237,0
+Task_D,GoalInference,GoalInference,True,2.307692249829071,0.9883762699288742,0.026666665449738503,0.0,0.013333333656191826,1

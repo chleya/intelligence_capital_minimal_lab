@@ -1,0 +1,5 @@
+mechanism,parameter,status,effect
+CapitalImpairmentDetector,"window=15, threshold=8 steps",ACTIVE,Impairment detected when regret > baseline for 8+ steps in 15-step window
+FallbackController,safe_action=1,INCLUDED,Triggers uniform weight if all capitals impaired
+DepreciationSchedule,rate=0.003/step,ACTIVE,Predicted-value EMA decays for non-validated capitals
+WeightSmoothing,max_delta=0.12,ACTIVE,"|Δw_i| ≤ 0.12 per step, prevents sudden trust explosion"

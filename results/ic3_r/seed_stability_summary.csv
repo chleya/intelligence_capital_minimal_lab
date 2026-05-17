@@ -1,0 +1,9 @@
+metric,value
+mean_delta_cb_vs_bs,-0.21550000160932542
+positive_seeds,0/10
+positive_seed_ratio,0.0
+95_CI_lower_bound,-0.2752434888015616
+95_CI_upper_bound,-0.1557565144170893
+weak_pass,False
+strong_pass,False
+n_seeds,10

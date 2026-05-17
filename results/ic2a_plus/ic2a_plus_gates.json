@@ -1,0 +1,21 @@
+{
+  "gates": {
+    "A_oracle_beats_learned_so_by_20": true,
+    "B_oracle_beats_learned_ao_by_20": true,
+    "C_conditional_rvr_ge_25": true,
+    "D_ood_bg_advantage_kept": true,
+    "E_zero_action_optimal_ge_10": true,
+    "F_seed_variance_lt_half_gap": true
+  },
+  "all_pass": true,
+  "aggregate": {
+    "mean_oracle_so_gap": 0.30899999999999994,
+    "mean_oracle_ao_gap": 0.5429999999999999,
+    "mean_conditional_rvr": 3.7999550651322322,
+    "ood_bg_oracle_ao_gap": 0.47450000000000003,
+    "mean_zero_action_optimal_rate": 0.28099999999999997,
+    "seed_var_so": 0.07904991390816875,
+    "seed_var_ao": 0.03831158803518562
+  },
+  "zero_action_caveat": false
+}

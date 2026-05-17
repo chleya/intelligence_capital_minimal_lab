@@ -1,0 +1,29 @@
+field,status,source,reason
+recent_prediction_error,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+recent_regret,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+confidence,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+calibration_error,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+realized_utility,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+realization_rate,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+capital_local_ood_score,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+nearest_support_distance,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+inference_cost,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+update_cost,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+storage_cost,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+goal_shift_score,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+expected_probe_value,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+depreciation_score,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+bad_debt_score,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+impaired,ALLOWED,CapitalReport.to_vector(),Part of report-derived 16-field vector per capital
+env_name,FORBIDDEN,N/A — not used,Would constitute feature engineering / env metadata leak
+env_id,FORBIDDEN,N/A — not used,Would constitute feature engineering / env metadata leak
+state_dim,FORBIDDEN,N/A — not used,Would constitute feature engineering / env metadata leak
+utility_type,FORBIDDEN,N/A — not used,Would constitute feature engineering / env metadata leak
+mode_type,FORBIDDEN,N/A — not used,Would constitute feature engineering / env metadata leak
+friction,FORBIDDEN,N/A — not used,Would constitute feature engineering / env metadata leak
+delay_strength,FORBIDDEN,N/A — not used,Would constitute feature engineering / env metadata leak
+action_effect_rule_name,FORBIDDEN,N/A — not used,Would constitute feature engineering / env metadata leak
+hand_written_regime_label,FORBIDDEN,N/A — not used,Would constitute feature engineering / env metadata leak
+manually_computed_global_coverage,FORBIDDEN,N/A — not used,Would constitute feature engineering / env metadata leak
+task_id,FORBIDDEN,N/A — not used,Would constitute feature engineering / env metadata leak
+task_type,FORBIDDEN,N/A — not used,Would constitute feature engineering / env metadata leak

@@ -1,0 +1,4 @@
+seed,n_samples,best_action_dist_table,best_action_dist_array,label_map_match,n_mismatches,horizon_used,zero_action_optimal_rate,action_encoding,states_per_seed
+0,1200,"{np.int64(-1): np.int64(548), np.int64(0): np.int64(125), np.int64(1): np.int64(527)}","{np.int64(0): np.int64(548), np.int64(1): np.int64(125), np.int64(2): np.int64(527)}",1.0,0,1,0.10416666666666667,"Y[:,0]=action_-1, Y[:,1]=action_0, Y[:,2]=action_+1",1200
+1,1200,"{np.int64(-1): np.int64(527), np.int64(0): np.int64(123), np.int64(1): np.int64(550)}","{np.int64(0): np.int64(527), np.int64(1): np.int64(123), np.int64(2): np.int64(550)}",1.0,0,1,0.1025,"Y[:,0]=action_-1, Y[:,1]=action_0, Y[:,2]=action_+1",1200
+2,1200,"{np.int64(-1): np.int64(520), np.int64(0): np.int64(59), np.int64(1): np.int64(621)}","{np.int64(0): np.int64(520), np.int64(1): np.int64(59), np.int64(2): np.int64(621)}",1.0,0,1,0.049166666666666664,"Y[:,0]=action_-1, Y[:,1]=action_0, Y[:,2]=action_+1",1200

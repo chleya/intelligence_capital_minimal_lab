@@ -1,0 +1,7 @@
+index,capital_id,capital_class,type,status,notes
+1,PolicyClone,PolicyCloneCapital,BehaviorCloning,MAIN-5,"StateOnlyPredictor, obs_dim=2, H=8, bottleneck=48"
+2,PrototypeOutcome,PrototypeOutcomeCapital,DenseSupportKNN,MAIN-5,"PrototypeOutcomeTable, n_clusters=50, k=3"
+3,AEP,AEPCapital,LearnedCompression,MAIN-5,"AEPCompressor, bottleneck=48"
+4,GoalInference,GoalInferenceCapital,HiddenGoalBeliefPropagation,MAIN-5,7x7 grid belief propagation
+5,SafeFallback,SafeFallbackCapital,SafeFallback,MAIN-5,"Experience-weighted random, 30% exploration"
+6,Residual,ResidualCapital,ResidualPrediction,ABLATION_ONLY,NOT in main allocator. Kept for ablation studies only.

@@ -1,0 +1,5 @@
+classification,detail,env,env_type,steps_pct,classification_note,rating,reason
+SYNTH-MAJORITY_WITH_PARTIAL_EXTERNAL_CHECK,External (HiddenGoalGridWorld/TaskD) = 25% of eval steps. Capital training is entirely on synthetic data. Partial external validity via HiddenGoalGridWorld benchmark.,,,,,,
+,,HiddenGoalGridWorld,EXTERNAL/SEMI-REAL,25%,Serves as semi-real benchmark,,
+,,Synthetic A/B/C,SYNTHETIC,75%,Counterfactual synthetic env,,
+,,,,,,SYNTH-MAJORITY_WITH_PARTIAL_EXTERNAL_CHECK,Capital models trained on synthetic data. HiddenGoalGridWorld is independent external env but capital training is not. 25% external eval is partial validation.

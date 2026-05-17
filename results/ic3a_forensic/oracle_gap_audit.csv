@@ -1,0 +1,6 @@
+task,oracle_per_task_max,allocator_estimated,gap_contribution,primary_cause
+Task_A,0.9639999866485596,0.1482,0.8157999866485596,"Oracle occasionally picks different optimal capital within task, allocator averages"
+Task_B,0.9959999918937683,0.1482,0.8477999918937683,"Oracle occasionally picks different optimal capital within task, allocator averages"
+Task_C,0.9440000057220459,0.1482,0.7958000057220459,"Oracle occasionally picks different optimal capital within task, allocator averages"
+Task_D,0.10400000214576721,0.1482,0.0,Report signal lag (10-step window) during task-type transitions in block interleaving
+OVERALL,0.7519999742507935,0.5928,0.15919997425079346,"Oracle gap = 0.1592. Main: report window lag on Task D, model capacity adequate, exploration via cap execution sufficient"

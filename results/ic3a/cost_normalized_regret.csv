@@ -1,0 +1,6 @@
+allocator,cost_norm_regret,cost_norm_utility
+BestSingleCapital,0.45599999999999996,0.544
+RandomAllocator,0.64,0.36
+UniformPortfolio,0.6,0.4
+MetaMLPAllocator,0.41200000000000003,0.588
+LearnedBanditAllocator,0.6599999999999999,0.34

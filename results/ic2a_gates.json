@@ -1,0 +1,25 @@
+{
+  "gates": {
+    "residual_signal_present": true,
+    "oracle_beats_so": true,
+    "cf_has_value": true,
+    "benchmark_stable": true,
+    "so_under_30": true
+  },
+  "all_pass": true,
+  "aggregate": {
+    "mean_residual_variance_ratio": 0.15151119229763438,
+    "std_residual_variance_ratio": 0.013256080683257131,
+    "mean_so_match": 0.0,
+    "std_so_match": 0.0,
+    "mean_ao_match": 0.5221666666666667,
+    "std_ao_match": 0.013581032524975563,
+    "oracle_match": 1.0,
+    "oracle_so_gap": 1.0,
+    "oracle_ao_gap": 0.47783333333333333,
+    "cf_gain": 0.47783333333333333,
+    "cf_has_value": true,
+    "oracle_beats_so": true,
+    "seed_stability_ratio": 0.09054021683317043
+  }
+}

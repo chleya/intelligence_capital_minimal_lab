@@ -1,0 +1,6 @@
+capital,score,max_capital
+PolicyClone,0.0,False
+PrototypeOutcome,0.0,False
+AEP,0.0,False
+GoalInference,1.0,False
+SafeFallback,0.006666666828095913,False

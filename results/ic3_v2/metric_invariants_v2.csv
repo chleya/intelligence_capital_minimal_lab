@@ -1,0 +1,12 @@
+invariant,selector,violations,passed,value_left,value_right
+selector_reward==oracle_set_hit,LR_v2,0.0,True,,
+strict<=oracle_set,LR_v2,0.0,True,,
+selector_reward==oracle_set_hit,RF_v2,0.0,True,,
+strict<=oracle_set,RF_v2,0.0,True,,
+selector_reward==oracle_set_hit,GB_v2,0.0,True,,
+strict<=oracle_set,GB_v2,0.0,True,,
+selector_reward==oracle_set_hit,MLP_v2,0.0,True,,
+strict<=oracle_set,MLP_v2,0.0,True,,
+selector_reward==oracle_set_hit,LR_v1,0.0,True,,
+strict<=oracle_set,LR_v1,0.0,True,,
+OH>=all,,,True,0.7549999952316284,0.6933333277702332

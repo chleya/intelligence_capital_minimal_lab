@@ -1,0 +1,16 @@
+utility,dist_m1,dist_0,dist_p1,label_divergence_from_U1,pairwise_divU2,pairwise_divU3,pairwise_divU4,pairwise_divU5,oracle_entropy,zero_action_rate,utility_value_scale,valid
+U1_main,0.46,0.095,0.445,0.0,1.0,0.9,0.0,0.745,0.9411297035538648,0.095,1.0078740119934082,False
+U2_reverse,0.48,0.0,0.52,1.0,0.0,1.0,1.0,1.0,0.6923469470899617,0.0,1.0078740119934082,True
+U3_target,0.005,0.995,0.0,0.9,1.0,0.0,0.9,0.155,0.03147904594717675,0.995,1.0078740119934082,True
+U4_risk_avoid,0.46,0.095,0.445,0.0,1.0,0.9,0.0,0.745,0.9411297035538648,0.095,1.0078740119934082,False
+U5_energy_aware,0.095,0.84,0.065,0.745,1.0,0.155,0.745,0.0,0.5477441825934888,0.84,1.0078740119934082,True
+pairwise_disagreement_U1_main_vs_U2_reverse,,,,1.0,,,,,,,,True
+pairwise_disagreement_U1_main_vs_U3_target,,,,0.9,,,,,,,,True
+pairwise_disagreement_U1_main_vs_U4_risk_avoid,,,,0.0,,,,,,,,True
+pairwise_disagreement_U1_main_vs_U5_energy_aware,,,,0.745,,,,,,,,True
+pairwise_disagreement_U2_reverse_vs_U3_target,,,,1.0,,,,,,,,True
+pairwise_disagreement_U2_reverse_vs_U4_risk_avoid,,,,1.0,,,,,,,,True
+pairwise_disagreement_U2_reverse_vs_U5_energy_aware,,,,1.0,,,,,,,,True
+pairwise_disagreement_U3_target_vs_U4_risk_avoid,,,,0.9,,,,,,,,True
+pairwise_disagreement_U3_target_vs_U5_energy_aware,,,,0.155,,,,,,,,True
+pairwise_disagreement_U4_risk_avoid_vs_U5_energy_aware,,,,0.745,,,,,,,,True

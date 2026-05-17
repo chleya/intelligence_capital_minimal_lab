@@ -1,0 +1,8 @@
+metric,value,detail
+oracle_gain_over_bestsingle,0.15166667103767395,Oracle 0.7600 - BS 0.6083
+switching_opportunity_rate,0.975,BestSingle != OracleBest in 97.5% of steps
+max_per_step_oracle_gain,1.0,
+block_transition_oracle_gain,0.19753087008440937,Mean gain in first 3 steps after block switch
+within_block_oracle_gain,0.1365079407200769,Mean gain mid-block (stable regime)
+block_transition_switch_rate,1.0,Switching opportunity rate at block boundaries
+within_block_switch_rate,0.9696649029982365,Switching opportunity rate within stable blocks

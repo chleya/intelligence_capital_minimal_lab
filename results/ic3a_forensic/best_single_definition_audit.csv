@@ -1,0 +1,5 @@
+capital,overall_mean_correct,is_best_single
+policy,0.307,False
+protomem,0.494,False
+paramcomp,0.579,True
+goalinfer,0.27,False

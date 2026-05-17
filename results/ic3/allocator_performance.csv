@@ -1,0 +1,7 @@
+allocator,mean_correct
+BestSingleCapital,0.6283333333333333
+UniformPortfolio,0.37333333333333335
+RandomAllocator,0.335
+MetaMLPAllocator,0.6233333333333333
+FeedbackControlledAllocator,0.6233333333333333
+OracleHindsight,0.7549999952316284
