@@ -1,0 +1,5 @@
+{
+  "q1": "NoMemory exploits stable action-frequency shortcut; inter-seed action distribution is consistent",
+  "q2": "Cross-seed feature drift corrupts k-NN; adding non-s0 data increases nearest-neighbor distance",
+  "q3": "Consolidated centroids drift and become imbalanced; cluster quality degrades with each cross-seed addition"
+}

@@ -1,0 +1,56 @@
+============================================================
+IC-2d: Readout-Matched Episodic
+============================================================
+Test samples: 200
+
+Step 1: adding seed=0 (1200 samples)
+  NoMemory         match=0.4600  (0.00s)
+  Episodic-kNN     match=0.1750  (1.40s)
+  Episodic-MLP     match=0.0950  (0.06s)
+  Episodic-RF      match=0.1400  (0.31s)
+
+Step 2: adding seed=1 (1200 samples)
+  NoMemory         match=0.4450  (0.00s)
+  Episodic-kNN     match=0.1450  (0.01s)
+  Episodic-MLP     match=0.0950  (0.07s)
+  Episodic-RF      match=0.1050  (0.31s)
+
+Step 3: adding seed=2 (1200 samples)
+  NoMemory         match=0.4450  (0.00s)
+  Episodic-kNN     match=0.1450  (0.01s)
+  Episodic-MLP     match=0.0950  (0.06s)
+  Episodic-RF      match=0.1250  (0.31s)
+
+Step 4: adding seed=3 (1200 samples)
+  NoMemory         match=0.4450  (0.00s)
+  Episodic-kNN     match=0.1500  (0.01s)
+  Episodic-MLP     match=0.0950  (0.06s)
+  Episodic-RF      match=0.1300  (0.31s)
+
+Step 5: adding seed=4 (1200 samples)
+  NoMemory         match=0.4450  (0.00s)
+  Episodic-kNN     match=0.1950  (0.01s)
+  Episodic-MLP     match=0.0950  (0.06s)
+  Episodic-RF      match=0.1900  (0.31s)
+
+Saved to results/ic2d/ic2d_results.csv
+
+Best Action Match Trajectory:
+strategy  Episodic-MLP  Episodic-RF  Episodic-kNN  NoMemory
+step                                                       
+1                0.095        0.140         0.175     0.460
+2                0.095        0.105         0.145     0.445
+3                0.095        0.125         0.145     0.445
+4                0.095        0.130         0.150     0.445
+5                0.095        0.190         0.195     0.445
+
+Final Step Comparison:
+  NoMemory             match=0.4450
+  Episodic-kNN         match=0.1950
+  Episodic-MLP         match=0.0950
+  Episodic-RF          match=0.1900
+
+MLP/k-NN ratio: 0.49x
+RF/k-NN ratio:  0.97x
+
+Done.

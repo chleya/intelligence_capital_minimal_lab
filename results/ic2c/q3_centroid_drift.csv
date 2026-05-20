@@ -1,0 +1,6 @@
+step,seed_added,n_samples,n_centroids,n_empty_clusters,centroid_avg_radius,cluster_count_gini,imbalance_ratio
+1,0,1200,20,0,2.9387,0.1374,2.86
+2,1,2400,20,0,2.9558,0.1356,4.94
+3,2,3600,20,0,2.7425,0.1108,2.94
+4,3,4800,20,0,2.8017,0.0932,4.43
+5,4,6000,20,0,3.0666,0.1071,7.27

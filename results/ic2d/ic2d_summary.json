@@ -1,0 +1,8 @@
+{
+  "final_nomemory": 0.445,
+  "final_episodic_knn": 0.195,
+  "final_episodic_mlp": 0.095,
+  "final_episodic_rf": 0.19,
+  "mlp_vs_knn_ratio": 0.48717948717948717,
+  "rf_vs_knn_ratio": 0.9743589743589743
+}

@@ -1,0 +1,14 @@
+{
+  "experiment": "IC-2c Episodic vs Consolidated Capital",
+  "update_steps": 5,
+  "test_samples": 200,
+  "final_episodic_match": 0.195,
+  "final_consolidated_match": 0.115,
+  "final_mixed_match": 0.095,
+  "final_nomemory_match": 0.445,
+  "episodic_trend": "appreciation",
+  "consolidated_trend": "appreciation",
+  "mixed_trend": "plateau/drift",
+  "consolidated_peak_delta": 0.0,
+  "episodic_peak_delta": 0.0
+}

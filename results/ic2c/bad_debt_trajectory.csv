@@ -1,0 +1,16 @@
+step,strategy,best_action_match,bad_debt_ratio
+1,episodic,0.175,1.0
+2,episodic,0.145,1.0
+3,episodic,0.145,1.0
+4,episodic,0.15,1.0
+5,episodic,0.195,1.0
+1,consolidated,0.095,1.0
+2,consolidated,0.095,1.0
+3,consolidated,0.095,1.0
+4,consolidated,0.095,1.0
+5,consolidated,0.115,1.0
+1,mixed,0.095,1.0
+2,mixed,0.095,1.0
+3,mixed,0.1,1.0
+4,mixed,0.095,1.0
+5,mixed,0.095,1.0
