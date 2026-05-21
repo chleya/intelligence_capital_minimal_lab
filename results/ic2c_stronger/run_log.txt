@@ -1,0 +1,216 @@
+Stronger Stabilization Remedy: Readout-Level Interventions
+============================================================
+CF table: 57000 rows, 10 seeds
+Per-seed train sizes: [(0, 1200), (1, 1200), (2, 1200), (3, 1200), (4, 1200)]
+Fixed test set: 200 samples (seed=0)
+
+[naive_consolidated]
+  Step 1: match=0.0950, purity=1.000, n_pure=20/20
+  Step 2: match=0.0950, purity=0.560, n_pure=20/20
+  Step 3: match=0.0950, purity=0.386, n_pure=1/20
+  Step 4: match=0.0950, purity=0.300, n_pure=0/20
+  Step 5: match=0.1150, purity=0.261, n_pure=1/20
+
+[seed_conditioned]
+  Step 1: match=0.0950
+  Step 2: match=0.1000
+  Step 3: match=0.1100
+  Step 4: match=0.1000
+  Step 5: match=0.0950
+
+[purity_gated_0.5]
+  Step 1: match=0.0950, purity=1.000, n_pure=20/20
+  Step 2: match=0.0950, purity=0.560, n_pure=20/20
+  Step 3: match=0.0950, purity=0.386, n_pure=1/20
+  Step 4: match=0.4600, purity=0.300, n_pure=0/20
+  Step 5: match=0.0950, purity=0.261, n_pure=1/20
+
+[purity_gated_0.3]
+  Step 1: match=0.0950, purity=1.000, n_pure=20/20
+  Step 2: match=0.0950, purity=0.560, n_pure=20/20
+  Step 3: match=0.0950, purity=0.386, n_pure=1/20
+  Step 4: match=0.0950, purity=0.300, n_pure=0/20
+  Step 5: match=0.0950, purity=0.261, n_pure=1/20
+
+[combined_anchor_seed_purity]
+  Step 1: match=0.0950, purity=1.000, n_pure=20/20
+  Step 2: match=0.1300, purity=0.560, n_pure=20/20
+  Step 3: match=0.0950, purity=0.386, n_pure=1/20
+  Step 4: match=0.1200, purity=0.300, n_pure=0/20
+  Step 5: match=0.4600, purity=0.261, n_pure=1/20
+
+[per_seed_consolidated]
+  Step 1: match=0.0950
+  Step 2: match=0.0950
+  Step 3: match=0.0950
+  Step 4: match=0.0950
+  Step 5: match=0.0950
+
+[episodic]
+  Step 1: match=0.1750
+  Step 2: match=0.1450
+  Step 3: match=0.1450
+  Step 4: match=0.1500
+  Step 5: match=0.1950
+
+[nomemory]
+  Step 1: match=0.4600
+  Step 2: match=0.4450
+  Step 3: match=0.4450
+  Step 4: match=0.4450
+  Step 5: match=0.4450
+
+============================================================
+RESULTS saved to results/ic2c_stronger\stronger_stabilization_results.csv (40 rows)
+============================================================
+
+Best Action Match Trajectory:
+strategy  combined_anchor_seed_purity  episodic  naive_consolidated  nomemory  per_seed_consolidated  purity_gated_0.3  purity_gated_0.5  seed_conditioned
+step                                                                                                                                                      
+1                               0.095     0.175               0.095     0.460                  0.095             0.095             0.095             0.095
+2                               0.130     0.145               0.095     0.445                  0.095             0.095             0.095             0.100
+3                               0.095     0.145               0.095     0.445                  0.095             0.095             0.095             0.110
+4                               0.120     0.150               0.095     0.445                  0.095             0.095             0.460             0.100
+5                               0.460     0.195               0.115     0.445                  0.095             0.095             0.095             0.095
+
+Final Step (5) Comparison:
+  naive_consolidated: 0.1150 (baseline)
+  episodic:           0.1950
+  nomemory:           0.4450
+
+Intervention Improvements over naive:
+  seed_conditioned                    match=0.0950  Δ=-0.0200 (-17.4%)  vs_episodic=48.7%
+  purity_gated_0.5                    match=0.0950  Δ=-0.0200 (-17.4%)  vs_episodic=48.7%
+  purity_gated_0.3                    match=0.0950  Δ=-0.0200 (-17.4%)  vs_episodic=48.7%
+  combined_anchor_seed_purity         match=0.4600  Δ=+0.3450 (+300.0%)  vs_episodic=235.9%
+  per_seed_consolidated               match=0.0950  Δ=-0.0200 (-17.4%)  vs_episodic=48.7%
+
+============================================================
+VERDICT:
+  STRONG improvement: combined_anchor_seed_purity = 0.4600 > naive*1.2 = 0.1380
+  Stabilization is SIGNIFICANTLY correctable at readout level.
+  BREAKTHROUGH: combined_anchor_seed_purity matches or exceeds episodic (0.1950)!
+
+============================================================
+Stronger Stabilization Remedy complete.
+============================================================
+Stronger Stabilization Remedy: Readout-Level Interventions
+============================================================
+CF table: 57000 rows, 10 seeds
+Per-seed train sizes: [(0, 1200), (1, 1200), (2, 1200), (3, 1200), (4, 1200)]
+Fixed test set: 200 samples (seed=0)
+
+[naive_consolidated]
+  Step 1: match=0.0950, purity=1.000, n_pure=20/20
+  Step 2: match=0.0950, purity=0.560, n_pure=20/20
+  Step 3: match=0.0950, purity=0.386, n_pure=1/20
+  Step 4: match=0.0950, purity=0.300, n_pure=0/20
+  Step 5: match=0.1150, purity=0.261, n_pure=1/20
+
+[seed_conditioned]
+  Step 1: match=0.0950
+  Step 2: match=0.1000
+  Step 3: match=0.1100
+  Step 4: match=0.1000
+  Step 5: match=0.0950
+
+[seed0_only]
+  Step 1: match=0.0950
+  Step 2: match=0.0950
+  Step 3: match=0.0950
+  Step 4: match=0.0950
+  Step 5: match=0.0950
+
+[weighted_seed_T1]
+  Step 1: match=0.0950
+  Step 2: match=0.0950
+  Step 3: match=0.0950
+  Step 4: match=0.0950
+  Step 5: match=0.0950
+
+[weighted_seed_T05]
+  Step 1: match=0.0950
+  Step 2: match=0.1000
+  Step 3: match=0.1100
+  Step 4: match=0.1000
+  Step 5: match=0.0950
+
+[purity_gated_0.5]
+  Step 1: match=0.0950, purity=1.000, n_pure=20/20
+  Step 2: match=0.0950, purity=0.560, n_pure=20/20
+  Step 3: match=0.0950, purity=0.386, n_pure=1/20
+  Step 4: match=0.4600, purity=0.300, n_pure=0/20
+  Step 5: match=0.0950, purity=0.261, n_pure=1/20
+
+[purity_gated_0.3]
+  Step 1: match=0.0950, purity=1.000, n_pure=20/20
+  Step 2: match=0.0950, purity=0.560, n_pure=20/20
+  Step 3: match=0.0950, purity=0.386, n_pure=1/20
+  Step 4: match=0.0950, purity=0.300, n_pure=0/20
+  Step 5: match=0.0950, purity=0.261, n_pure=1/20
+
+[combined_anchor_seed_purity]
+  Step 1: match=0.0950, purity=1.000, n_pure=20/20
+  Step 2: match=0.1300, purity=0.560, n_pure=20/20
+  Step 3: match=0.0950, purity=0.386, n_pure=1/20
+  Step 4: match=0.1200, purity=0.300, n_pure=0/20
+  Step 5: match=0.4600, purity=0.261, n_pure=1/20
+
+[per_seed_consolidated]
+  Step 1: match=0.0950
+  Step 2: match=0.0950
+  Step 3: match=0.0950
+  Step 4: match=0.0950
+  Step 5: match=0.0950
+
+[episodic]
+  Step 1: match=0.1750
+  Step 2: match=0.1450
+  Step 3: match=0.1450
+  Step 4: match=0.1500
+  Step 5: match=0.1950
+
+[nomemory]
+  Step 1: match=0.4600
+  Step 2: match=0.4450
+  Step 3: match=0.4450
+  Step 4: match=0.4450
+  Step 5: match=0.4450
+
+============================================================
+RESULTS saved to results/ic2c_stronger\stronger_stabilization_results.csv (55 rows)
+============================================================
+
+Best Action Match Trajectory:
+strategy  combined_anchor_seed_purity  episodic  naive_consolidated  nomemory  per_seed_consolidated  purity_gated_0.3  purity_gated_0.5  seed0_only  seed_conditioned  weighted_seed_T05  weighted_seed_T1
+step                                                                                                                                                                                                       
+1                               0.095     0.175               0.095     0.460                  0.095             0.095             0.095       0.095             0.095              0.095             0.095
+2                               0.130     0.145               0.095     0.445                  0.095             0.095             0.095       0.095             0.100              0.100             0.095
+3                               0.095     0.145               0.095     0.445                  0.095             0.095             0.095       0.095             0.110              0.110             0.095
+4                               0.120     0.150               0.095     0.445                  0.095             0.095             0.460       0.095             0.100              0.100             0.095
+5                               0.460     0.195               0.115     0.445                  0.095             0.095             0.095       0.095             0.095              0.095             0.095
+
+Final Step (5) Comparison:
+  naive_consolidated: 0.1150 (baseline)
+  episodic:           0.1950
+  nomemory:           0.4450
+
+Intervention Improvements over naive:
+  seed_conditioned                    match=0.0950  Δ=-0.0200 (-17.4%)  vs_episodic=48.7%
+  seed0_only                          match=0.0950  Δ=-0.0200 (-17.4%)  vs_episodic=48.7%
+  weighted_seed_T1                    match=0.0950  Δ=-0.0200 (-17.4%)  vs_episodic=48.7%
+  weighted_seed_T05                   match=0.0950  Δ=-0.0200 (-17.4%)  vs_episodic=48.7%
+  purity_gated_0.5                    match=0.0950  Δ=-0.0200 (-17.4%)  vs_episodic=48.7%
+  purity_gated_0.3                    match=0.0950  Δ=-0.0200 (-17.4%)  vs_episodic=48.7%
+  combined_anchor_seed_purity         match=0.4600  Δ=+0.3450 (+300.0%)  vs_episodic=235.9%
+  per_seed_consolidated               match=0.0950  Δ=-0.0200 (-17.4%)  vs_episodic=48.7%
+
+============================================================
+VERDICT:
+  STRONG improvement: combined_anchor_seed_purity = 0.4600 > naive*1.2 = 0.1380
+  Stabilization is SIGNIFICANTLY correctable at readout level.
+  BREAKTHROUGH: combined_anchor_seed_purity matches or exceeds episodic (0.1950)!
+
+============================================================
+Stronger Stabilization Remedy complete.
+============================================================
