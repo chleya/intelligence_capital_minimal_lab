@@ -1,0 +1,154 @@
+Root Cause Fix: Y-Aware Consolidation
+============================================================
+Hypothesis: KMeans fails because it ignores Y information.
+Evidence: learned_state_only=0.740, counterfactual_compressor=0.775, KMeans=0.095
+Fix: Y-aware clustering that respects action boundaries.
+CF table: 57000 rows, 10 seeds
+Per-seed train sizes: [(0, 1200), (1, 1200), (2, 1200), (3, 1200), (4, 1200)]
+Fixed test set: 200 samples (seed=0)
+
+[kmeans_20]
+  Step 1: match=0.0950
+  Step 2: match=0.0950
+  Step 3: match=0.0950
+  Step 4: match=0.0950
+  Step 5: match=0.1150
+
+[kmeans_50]
+  Step 1: match=0.1250
+  Step 2: match=0.1050
+  Step 3: match=0.1100
+  Step 4: match=0.0950
+  Step 5: match=0.1250
+
+[kmeans_100]
+  Step 1: match=0.1200
+  Step 2: match=0.1350
+  Step 3: match=0.1200
+  Step 4: match=0.1150
+  Step 5: match=0.1300
+
+[kmeans_200]
+  Step 1: match=0.2050
+  Step 2: match=0.1250
+  Step 3: match=0.1450
+  Step 4: match=0.1350
+  Step 5: match=0.1200
+
+[y_aware_w0.5]
+  Step 1: match=0.1100
+  Step 2: match=0.0950
+  Step 3: match=0.0950
+  Step 4: match=0.1300
+  Step 5: match=0.0950
+
+[y_aware_w1.0]
+  Step 1: match=0.1300
+  Step 2: match=0.0950
+  Step 3: match=0.1650
+  Step 4: match=0.1500
+  Step 5: match=0.1050
+
+[y_aware_w2.0]
+  Step 1: match=0.2550
+  Step 2: match=0.2400
+  Step 3: match=0.2450
+  Step 4: match=0.2000
+  Step 5: match=0.2450
+
+[y_aware_w5.0]
+  Step 1: match=0.5550
+  Step 2: match=0.5750
+  Step 3: match=0.5600
+  Step 4: match=0.5800
+  Step 5: match=0.5000
+
+[per_action_kmeans]
+  Step 1: match=0.5900
+  Step 2: match=0.5550
+  Step 3: match=0.6050
+  Step 4: match=0.5400
+  Step 5: match=0.5850
+
+[dt_20]
+  Step 1: match=0.1250
+  Step 2: match=0.1300
+  Step 3: match=0.1750
+  Step 4: match=0.1500
+  Step 5: match=0.1100
+
+[dt_50]
+  Step 1: match=0.2950
+  Step 2: match=0.1950
+  Step 3: match=0.2700
+  Step 4: match=0.2600
+  Step 5: match=0.2200
+
+[dt_100]
+  Step 1: match=0.3950
+  Step 2: match=0.3200
+  Step 3: match=0.3200
+  Step 4: match=0.3050
+  Step 5: match=0.3000
+
+[episodic]
+  Step 1: match=0.1750
+  Step 2: match=0.1450
+  Step 3: match=0.1450
+  Step 4: match=0.1500
+  Step 5: match=0.1950
+
+[nomemory]
+  Step 1: match=0.4600
+  Step 2: match=0.4450
+  Step 3: match=0.4450
+  Step 4: match=0.4450
+  Step 5: match=0.4450
+
+============================================================
+RESULTS saved to results/ic2c_y_aware\y_aware_consolidation_results.csv (70 rows)
+============================================================
+
+Best Action Match Trajectory:
+strategy  dt_100  dt_20  dt_50  episodic  kmeans_100  kmeans_20  kmeans_200  kmeans_50  nomemory  per_action_kmeans  y_aware_w0.5  y_aware_w1.0  y_aware_w2.0  y_aware_w5.0
+step                                                                                                                                                                       
+1          0.395  0.125  0.295     0.175       0.120      0.095       0.205      0.125     0.460              0.590         0.110         0.130         0.255         0.555
+2          0.320  0.130  0.195     0.145       0.135      0.095       0.125      0.105     0.445              0.555         0.095         0.095         0.240         0.575
+3          0.320  0.175  0.270     0.145       0.120      0.095       0.145      0.110     0.445              0.605         0.095         0.165         0.245         0.560
+4          0.305  0.150  0.260     0.150       0.115      0.095       0.135      0.095     0.445              0.540         0.130         0.150         0.200         0.580
+5          0.300  0.110  0.220     0.195       0.130      0.115       0.120      0.125     0.445              0.585         0.095         0.105         0.245         0.500
+
+Final Step (5) Results:
+  kmeans_20                 match=0.1150
+  kmeans_50                 match=0.1250
+  kmeans_100                match=0.1300
+  kmeans_200                match=0.1200
+  y_aware_w0.5              match=0.0950
+  y_aware_w1.0              match=0.1050
+  y_aware_w2.0              match=0.2450
+  y_aware_w5.0              match=0.5000
+  per_action_kmeans         match=0.5850
+  dt_20                     match=0.1100
+  dt_50                     match=0.2200
+  dt_100                    match=0.3000
+  episodic                  match=0.1950
+  nomemory                  match=0.4450
+
+Key comparisons:
+  kmeans_20 (baseline): 0.1150
+  episodic:             0.1950
+  nomemory:             0.4450
+
+Best Y-aware intervention: per_action_kmeans = 0.5850
+  BREAKTHROUGH: Y-aware consolidation BEATS episodic!
+  Y-aware > 2x KMeans: root cause confirmed (Y-information is key)
+  Y-aware BEATS NoMemory shortcut!
+
+Resolution hypothesis test:
+  kmeans_100: 0.1300
+  kmeans_200: 0.1200
+  Resolution does NOT solve the problem → Y-information is the bottleneck
+
+============================================================
+Y-Aware Consolidation experiment complete.
+============================================================
