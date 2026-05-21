@@ -1,0 +1,8 @@
+{
+  "experiment": "IC-2e Distribution-Aware Consolidation",
+  "final_nomemory": 0.445,
+  "final_episodic_knn": 0.195,
+  "final_cross_seed": 0.115,
+  "final_per_seed": 0.095,
+  "per_vs_cross_delta": -0.020000000000000004
+}

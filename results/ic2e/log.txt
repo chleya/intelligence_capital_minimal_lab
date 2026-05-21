@@ -1,0 +1,61 @@
+============================================================
+IC-2e: Distribution-Aware Consolidation
+============================================================
+Per-seed train sizes: [(0, 1200), (1, 1200), (2, 1200), (3, 1200), (4, 1200)]
+Test samples: 200
+
+Step 1: adding seed=0 (1200 samples)
+  NoMemory                  match=0.4600  mem=3
+  Episodic-kNN              match=0.1750  mem=200
+  CrossSeedConsolidated     match=0.0950  mem=20
+  PerSeedConsolidated       match=0.0950  mem=8
+
+Step 2: adding seed=1 (1200 samples)
+  NoMemory                  match=0.4450  mem=3
+  Episodic-kNN              match=0.1450  mem=200
+  CrossSeedConsolidated     match=0.0950  mem=20
+  PerSeedConsolidated       match=0.0950  mem=16
+
+Step 3: adding seed=2 (1200 samples)
+  NoMemory                  match=0.4450  mem=3
+  Episodic-kNN              match=0.1450  mem=200
+  CrossSeedConsolidated     match=0.0950  mem=20
+  PerSeedConsolidated       match=0.0950  mem=24
+
+Step 4: adding seed=3 (1200 samples)
+  NoMemory                  match=0.4450  mem=3
+  Episodic-kNN              match=0.1500  mem=200
+  CrossSeedConsolidated     match=0.0950  mem=20
+  PerSeedConsolidated       match=0.0950  mem=32
+
+Step 5: adding seed=4 (1200 samples)
+  NoMemory                  match=0.4450  mem=3
+  Episodic-kNN              match=0.1950  mem=200
+  CrossSeedConsolidated     match=0.1150  mem=20
+  PerSeedConsolidated       match=0.0950  mem=40
+
+Saved to results/ic2e/ic2e_results.csv
+
+Best Action Match Trajectory:
+strategy  CrossSeedConsolidated  Episodic-kNN  NoMemory  PerSeedConsolidated
+step                                                                        
+1                         0.095         0.175     0.460                0.095
+2                         0.095         0.145     0.445                0.095
+3                         0.095         0.145     0.445                0.095
+4                         0.095         0.150     0.445                0.095
+5                         0.115         0.195     0.445                0.095
+
+Final Step Comparison:
+  NoMemory                  match=0.4450
+  Episodic-kNN              match=0.1950
+  CrossSeedConsolidated     match=0.1150
+  PerSeedConsolidated       match=0.0950
+
+--- IC-2e Results ---
+   NoMemory:               0.4450
+   Episodic-kNN:           0.1950
+   CrossSeedConsolidated:  0.1150
+   PerSeedConsolidated:    0.0950
+   PerSeed vs CrossSeed:   -0.0200
+
+Done.

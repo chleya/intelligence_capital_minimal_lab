@@ -1,0 +1,51 @@
+============================================================
+IC-2f: Structural Fidelity Metrics
+============================================================
+Test samples: 200
+
+Step 1: adding seed=0 (1200 samples)
+  Episodic-kNN              match=0.1750  drift=0.0000  coverage=1.0000  disrupt=0.0000  n_cent=200
+  CrossSeedConsolidated     match=0.0950  drift=0.0000  coverage=1.0000  disrupt=0.0000  n_cent=20
+  PerSeedConsolidated       match=0.0950  drift=0.0000  coverage=1.0000  disrupt=0.0000  n_cent=8
+
+Step 2: adding seed=1 (1200 samples)
+  Episodic-kNN              match=0.1450  drift=2.3930  coverage=0.8799  disrupt=0.5000  n_cent=200
+  CrossSeedConsolidated     match=0.0950  drift=1.3897  coverage=0.9040  disrupt=0.0000  n_cent=20
+  PerSeedConsolidated       match=0.0950  drift=0.0000  coverage=1.0000  disrupt=0.0000  n_cent=16
+
+Step 3: adding seed=2 (1200 samples)
+  Episodic-kNN              match=0.1450  drift=2.3860  coverage=0.8778  disrupt=0.5200  n_cent=200
+  CrossSeedConsolidated     match=0.0950  drift=1.2817  coverage=0.9179  disrupt=0.0000  n_cent=20
+  PerSeedConsolidated       match=0.0950  drift=0.0000  coverage=1.0000  disrupt=0.0000  n_cent=24
+
+Step 4: adding seed=3 (1200 samples)
+  Episodic-kNN              match=0.1500  drift=2.5752  coverage=0.8444  disrupt=0.5200  n_cent=200
+  CrossSeedConsolidated     match=0.0950  drift=1.0920  coverage=0.9206  disrupt=0.0000  n_cent=20
+  PerSeedConsolidated       match=0.0950  drift=0.0000  coverage=1.0000  disrupt=0.0000  n_cent=32
+
+Step 5: adding seed=4 (1200 samples)
+  Episodic-kNN              match=0.1950  drift=2.3698  coverage=0.8733  disrupt=0.5000  n_cent=200
+  CrossSeedConsolidated     match=0.1150  drift=1.2804  coverage=0.9143  disrupt=0.0400  n_cent=20
+  PerSeedConsolidated       match=0.0950  drift=0.0000  coverage=1.0000  disrupt=0.0000  n_cent=40
+
+Saved to results/ic2f/ic2f_fidelity_metrics.csv
+
+--- Episodic-kNN Fidelity Summary ---
+  Avg centroid_drift:        1.9448
+  Avg coverage_preservation:  0.8951
+  Avg routing_disruption:     0.4080
+  Final best_action_match:    0.1950
+
+--- CrossSeedConsolidated Fidelity Summary ---
+  Avg centroid_drift:        1.0088
+  Avg coverage_preservation:  0.9314
+  Avg routing_disruption:     0.0080
+  Final best_action_match:    0.1150
+
+--- PerSeedConsolidated Fidelity Summary ---
+  Avg centroid_drift:        0.0000
+  Avg coverage_preservation:  1.0000
+  Avg routing_disruption:     0.0000
+  Final best_action_match:    0.0950
+
+Done.
