@@ -1,0 +1,45 @@
+Phase 6-A: Seed Scaling S3 (100 seeds)
+============================================================
+C3 baseline (5 seeds): per_action_kmeans=0.585, nomemory=0.445, kmeans_20=0.095
+Now testing at 100 seeds.
+Run ID: c4_S3_1779438118
+Per-seed train sizes (first 5): [(0, 1200), (1, 1200), (2, 1200), (3, 1200), (4, 1200)] ... total=120000
+Test set: 200 samples (seed=0, horizon=1, split=test_id)
+
+[kmeans_20]
+  Final match: 0.0950
+
+[y_aware_w5.0]
+  Final match: 0.5450
+
+[per_action_kmeans]
+  Final match: 0.6150
+
+[adaptive_per_action]
+  Final match: 0.6300
+
+[nomemory]
+  Final match: 0.4450
+
+Results saved to results/ic2c_scaling\scaling_S3_results.csv
+
+============================================================
+Final Step (100) Results (100 seeds):
+============================================================
+  kmeans_20:            0.0950
+  y_aware_w5.0:         0.5450
+  per_action_kmeans:    0.6150
+  adaptive_per_action:  0.6300
+  nomemory:             0.4450
+
+  Delta(per_action - nomemory) = +0.1700
+
+  vs C3 (5 seeds): per_action=0.585, nomemory=0.445, delta=+0.140
+
+  VERDICT: STRONG PASS — Per-Action dominates at scale.
+
+  Adaptive centroids (0.6300) > fixed (0.6150) — adaptive helps at scale.
+
+============================================================
+Phase 6-A scaling experiment complete.
+============================================================
