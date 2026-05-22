@@ -61,3 +61,66 @@ Cross-Bottleneck Synergism Analysis:
 ============================================================
 Phase 7 3.3A complete.
 ============================================================
+============================================================
+Phase 7 3.3A: Cross-Bottleneck Joint — Counterfactual Analogue
+============================================================
+Run ID: c5_1779470851
+Hypothesis: Y-aware stabilization centroids are more robust to perturbations
+
+Step 1: Load counterfactual data
+  Loaded 57000 rows, 10 seeds
+  Train: 6000 samples
+  Test: 200 samples
+
+Step 2: Consolidate all strategies (unperturbed baseline)
+  kmeans_20                : 0.1150 (unperturbed)
+  y_aware_w5.0             : 0.5000 (unperturbed)
+  per_action_kmeans        : 0.5850 (unperturbed)
+  nomemory                 : 0.4450 (unperturbed)
+
+Step 3: Apply perturbations and measure robustness
+
+Step 4: Aggregate results
+============================================================
+
+  additive_noise:
+    per_action_kmeans        : 0.5960 → 0.4190 (drop 0.1770, 30%)
+    y_aware_w5.0             : 0.5060 → 0.4740 (drop 0.0320, 6%)
+    kmeans_20                : 0.1150 → 0.1110 (drop 0.0040, 3%)
+    nomemory                 : 0.4450 → 0.4450 (drop 0.0000, 0%)
+
+  directional_shift:
+    per_action_kmeans        : 0.5890 → 0.5850 (drop 0.0040, 1%)
+    y_aware_w5.0             : 0.5030 → 0.5140 (drop -0.0110, -2%)
+    kmeans_20                : 0.1150 → 0.1190 (drop -0.0040, -3%)
+    nomemory                 : 0.4450 → 0.4450 (drop 0.0000, 0%)
+
+  centroid_dropout:
+    per_action_kmeans        : 0.5830 → 0.3800 (drop 0.2030, 35%)
+    y_aware_w5.0             : 0.5010 → 0.4600 (drop 0.0410, 8%)
+    kmeans_20                : 0.1170 → 0.1410 (drop -0.0240, -21%)
+    nomemory                 : 0.4450 → 0.4450 (drop 0.0000, 0%)
+
+============================================================
+Cross-Bottleneck Synergism Analysis:
+============================================================
+  additive_noise:
+    Per-Action decay: 29.7%, KMeans decay: 3.5%
+    Robustness advantage (PA vs KMeans): -26.2%
+    → NO SYNERGISM: Y-aware does not improve perturbation robustness
+  directional_shift:
+    Per-Action decay: 0.7%, KMeans decay: -3.5%
+    Robustness advantage (PA vs KMeans): -4.2%
+    → NO SYNERGISM: Y-aware does not improve perturbation robustness
+  centroid_dropout:
+    Per-Action decay: 34.8%, KMeans decay: -20.5%
+    Robustness advantage (PA vs KMeans): -55.3%
+    → NO SYNERGISM: Y-aware does not improve perturbation robustness
+
+  Results saved to results/ic2c_cross_bottleneck\cross_bottleneck_results.csv
+
+  Total time: 10s
+
+============================================================
+Phase 7 3.3A complete.
+============================================================

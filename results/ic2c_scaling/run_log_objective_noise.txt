@@ -1,0 +1,99 @@
+============================================================
+Phase 6-B/C: Objective Scaling + Noise Scaling
+============================================================
+Run ID: c4_bc_1779485386
+
+Step 1: Load counterfactual data
+  Loaded 57000 rows, 10 seeds
+  Train: 6000 samples
+  Test: 200 samples (seed=0, horizon=1)
+
+==================================================
+PHASE 6-B: OBJECTIVE SCALING (Multi-Action)
+==================================================
+  Baseline: 3 actions, PA=0.585, NM=0.445, delta=+0.140
+
+  --- 3 actions ---
+    kmeans              : 0.0950
+    y_aware_w5          : 0.4650
+    per_action          : 0.5000
+    nomemory            : 0.4450
+    delta(PA-NM)=+0.0550  delta(PA-KM)=+0.4050
+
+  --- 5 actions ---
+    kmeans              : 0.5450
+    y_aware_w5          : 0.6650
+    per_action          : 0.7150
+    nomemory            : 0.3850
+    delta(PA-NM)=+0.3300  delta(PA-KM)=+0.1700
+
+  --- 10 actions ---
+    kmeans              : 0.2850
+    y_aware_w5          : 0.3550
+    per_action          : 0.3550
+    nomemory            : 0.2650
+    delta(PA-NM)=+0.0900  delta(PA-KM)=+0.0700
+
+  --- 20 actions ---
+    kmeans              : 0.1750
+    y_aware_w5          : 0.1950
+    per_action          : 0.1550
+    nomemory            : 0.1100
+    delta(PA-NM)=+0.0450  delta(PA-KM)=-0.0200
+
+  Summary:
+   Actions    KMeans   Y-aware    PerAct     NoMem     PA-NM     PA-KM
+         3    0.0950    0.4650    0.5000    0.4450   +0.0550   +0.4050
+         5    0.5450    0.6650    0.7150    0.3850   +0.3300   +0.1700
+        10    0.2850    0.3550    0.3550    0.2650   +0.0900   +0.0700
+        20    0.1750    0.1950    0.1550    0.1100   +0.0450   -0.0200
+
+  delta(PA-NM) slope (20act - 3act) = -0.0100
+  VERDICT: STABLE — Y-aware advantage holds steady across actions
+
+==================================================
+PHASE 6-C: NOISE SCALING
+==================================================
+
+  --- noise=0.00 x std(X) ---
+    kmeans              : 0.0950
+    y_aware_w5          : 0.4650
+    per_action          : 0.5000
+    nomemory            : 0.4450
+    delta(PA-NM)=+0.0550
+
+  --- noise=0.03 x std(X) ---
+    kmeans              : 0.0950
+    y_aware_w5          : 0.4817
+    per_action          : 0.4950
+    nomemory            : 0.4450
+    delta(PA-NM)=+0.0500
+
+  --- noise=0.10 x std(X) ---
+    kmeans              : 0.0950
+    y_aware_w5          : 0.4783
+    per_action          : 0.4967
+    nomemory            : 0.4450
+    delta(PA-NM)=+0.0517
+
+  --- noise=0.30 x std(X) ---
+    kmeans              : 0.0950
+    y_aware_w5          : 0.4567
+    per_action          : 0.5050
+    nomemory            : 0.4450
+    delta(PA-NM)=+0.0600
+
+  --- noise=1.00 x std(X) ---
+    kmeans              : 0.0950
+    y_aware_w5          : 0.4800
+    per_action          : 0.5450
+    nomemory            : 0.4450
+    delta(PA-NM)=+0.1000
+
+  PA drop (0 -> max noise): -0.0450
+  KM drop (0 -> max noise): 0.0000
+  VERDICT: WEAK POSITIVE — Y-aware degrades slightly slower
+
+============================================================
+Phase 6-B/C complete. Total time: 37s
+============================================================

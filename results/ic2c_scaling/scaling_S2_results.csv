@@ -118,7 +118,7 @@ step,strategy,best_action_match,n_seeds,level
 17,per_action_kmeans,0.67,50,S2
 18,per_action_kmeans,0.605,50,S2
 19,per_action_kmeans,0.605,50,S2
-20,per_action_kmeans,0.63,50,S2
+20,per_action_kmeans,0.635,50,S2
 21,per_action_kmeans,0.575,50,S2
 22,per_action_kmeans,0.59,50,S2
 23,per_action_kmeans,0.62,50,S2
@@ -179,9 +179,9 @@ step,strategy,best_action_match,n_seeds,level
 28,adaptive_per_action,0.595,50,S2
 29,adaptive_per_action,0.63,50,S2
 30,adaptive_per_action,0.625,50,S2
-31,adaptive_per_action,0.625,50,S2
+31,adaptive_per_action,0.62,50,S2
 32,adaptive_per_action,0.595,50,S2
-33,adaptive_per_action,0.555,50,S2
+33,adaptive_per_action,0.545,50,S2
 34,adaptive_per_action,0.585,50,S2
 35,adaptive_per_action,0.595,50,S2
 36,adaptive_per_action,0.585,50,S2
@@ -195,9 +195,9 @@ step,strategy,best_action_match,n_seeds,level
 44,adaptive_per_action,0.605,50,S2
 45,adaptive_per_action,0.61,50,S2
 46,adaptive_per_action,0.63,50,S2
-47,adaptive_per_action,0.595,50,S2
+47,adaptive_per_action,0.605,50,S2
 48,adaptive_per_action,0.57,50,S2
-49,adaptive_per_action,0.65,50,S2
+49,adaptive_per_action,0.64,50,S2
 50,adaptive_per_action,0.63,50,S2
 1,nomemory,0.46,50,S2
 2,nomemory,0.445,50,S2

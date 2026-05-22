@@ -11,3 +11,6 @@ build/
 .DS_Store
 Thumbs.db
 *.npz
+results/counterfactual_table_20s.csv
+results/counterfactual_table_50s.csv
+results/counterfactual_table_100s.csv
